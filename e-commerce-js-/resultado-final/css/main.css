@@ -43,7 +43,7 @@ aside {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .logo {
@@ -157,7 +157,7 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: .25rem;
+    gap: 1rem;
 }
 
 .producto-titulo {

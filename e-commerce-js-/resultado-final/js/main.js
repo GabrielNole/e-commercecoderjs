@@ -3,7 +3,7 @@ const productos = [
     // Notebooks
     {
         id: "notebook-01",
-        titulo: "Notebook 01",
+        titulo: "Notebook Asus Ryzen 3 8GB 256GB SSD 14 FHD",
         imagen: "./img/notebooks/01.jpg",
         categoria: {
             nombre: "Notebooks",
@@ -13,7 +13,7 @@ const productos = [
     },
     {
         id: "notebook-02",
-        titulo: "Notebook 02",
+        titulo: "Notebook HP Core i5 11va 12GB 512GB SSD 15.6 FHD",
         imagen: "./img/notebooks/02.jpg",
         categoria: {
             nombre: "Notebooks",
@@ -23,7 +23,7 @@ const productos = [
     },
     {
         id: "notebook-03",
-        titulo: "Notebook 03",
+        titulo: "Notebook Lenovo Core i7 12GB 256GB SSD 14 FHD Win10 Pro",
         imagen: "./img/notebooks/03.jpg",
         categoria: {
             nombre: "Notebooks",
@@ -33,17 +33,17 @@ const productos = [
     },
     {
         id: "notebook-04",
-        titulo: "Notebook 04",
+        titulo: "Notebook Gamer Asus Core i5 4.5Ghz 8GB 512GB SSD 15.6",
         imagen: "./img/notebooks/04.jpg",
         categoria: {
             nombre: "Notebooks",
             id: "notebooks"
         },
-        precio: 1889
+        precio: 1044
     },
     {
         id: "notebook-05",
-        titulo: "Notebook 05",
+        titulo: "Notebook Gateway Ryzen 7 8GB 512GB SSD 15.6 IPS Win 11",
         imagen: "./img/notebooks/05.jpg",
         categoria: {
             nombre: "Notebooks",
@@ -54,7 +54,7 @@ const productos = [
     // Celulares
     {
         id: "celulares-01",
-        titulo: "Celular 01",
+        titulo: "Xiaomi Redmi 9A 6.53 32GB 2GB 13MP 5000mAh Gris",
         imagen: "./img/celulares/01.jpg",
         categoria: {
             nombre: "Celulares",
@@ -64,7 +64,7 @@ const productos = [
     },
     {
         id: "celular-02",
-        titulo: "Celular 02",
+        titulo: "Xiaomi Redmi 9C 6.53 64GB 3GB 13MP Cámara Triple",
         imagen: "./img/celulares/02.jpg",
         categoria: {
             nombre: "Celulares",
@@ -74,7 +74,7 @@ const productos = [
     },
     {
         id: "celular-03",
-        titulo: "Celular 03",
+        titulo: "Motorola Moto e7 6.5 HD+ 32GB 2GB Cámara Dual Gris",
         imagen: "./img/celulares/03.jpg",
         categoria: {
             nombre: "Celulares",
@@ -84,7 +84,7 @@ const productos = [
     },
     {
         id: "celular-04",
-        titulo: "Celular 04",
+        titulo: "Xiaomi Redmi Note 9 Pro 6.67 128GB 6GB Cámara",
         imagen: "./img/celulares/04.jpg",
         categoria: {
             nombre: "Celulares",
@@ -94,7 +94,7 @@ const productos = [
     },
     {
         id: "celular-05",
-        titulo: "Celular 05",
+        titulo: "Samsung Galaxy A03 6.5 32GB 3GB 4G Cámara Dual",
         imagen: "./img/celulares/05.jpg",
         categoria: {
             nombre: "Celulares",
@@ -104,7 +104,7 @@ const productos = [
     },
     {
         id: "celular-06",
-        titulo: "Celular 06",
+        titulo: "Samsung Galaxy A13 6.6 32GB 3GB 4G Cámara Cuádruple",
         imagen: "./img/celulares/06.jpg",
         categoria: {
             nombre: "Celulares",
@@ -114,7 +114,7 @@ const productos = [
     },
     {
         id: "celular-07",
-        titulo: "Celular 07",
+        titulo: "Motorola E20 6.5 32GB 2GB Cámara Dual Gris",
         imagen: "./img/celulares/07.jpg",
         categoria: {
             nombre: "Celulares",
@@ -124,7 +124,7 @@ const productos = [
     },
     {
         id: "celular-08",
-        titulo: "Celular 08",
+        titulo: "Umidigi Power 5S 6.53 32GB 4GB Cámara Triple",
         imagen: "./img/celulares/08.jpg",
         categoria: {
             nombre: "Celulares",
@@ -135,7 +135,7 @@ const productos = [
     // PC
     {
         id: "pc-01",
-        titulo: "PC 01",
+        titulo: "PC Gamer Core i7 11700F 11va 1TB SSD",
         imagen: "./img/pc/01.jpg",
         categoria: {
             nombre: "PC",
@@ -145,7 +145,7 @@ const productos = [
     },
     {
         id: "pc-02",
-        titulo: "PC 02",
+        titulo: "Pc Ryzen 7 5800X 1TB SSD 16GB RTX3070 Ti 8GB",
         imagen: "./img/pc/02.jpg",
         categoria: {
             nombre: "PC",
@@ -155,7 +155,7 @@ const productos = [
     },
     {
         id: "pc-03",
-        titulo: "PC 03",
+        titulo: "Pc Gamer i7 12700F 1TB SSD 16GB",
         imagen: "./img/pc/03.jpg",
         categoria: {
             nombre: "PC",
@@ -165,7 +165,7 @@ const productos = [
     },
     {
         id: "pc-04",
-        titulo: "PC 04",
+        titulo: "Pc Gamer Core i5 10400F 16GB 512GB SSD RX6400 4GB",
         imagen: "./img/pc/04.jpg",
         categoria: {
             nombre: "PC",
@@ -175,7 +175,7 @@ const productos = [
     },
     {
         id: "pc-05",
-        titulo: "PC 05",
+        titulo: "Pc Gamer Core i9 12900K 2TB SSD 32GB RTX3090 24GB",
         imagen: "./img/pc/05.jpg",
         categoria: {
             nombre: "PC",
