@@ -1,190 +1,12 @@
-// PRODUCTOS
-const productos = [
-    // Notebooks
-    {
-        id: "notebook-01",
-        titulo: "Notebook Asus Ryzen 3 8GB 256GB SSD 14 FHD",
-        imagen: "./img/notebooks/01.jpg",
-        categoria: {
-            nombre: "Notebooks",
-            id: "notebooks"
-        },
-        precio: 484
-    },
-    {
-        id: "notebook-02",
-        titulo: "Notebook HP Core i5 11va 12GB 512GB SSD 15.6 FHD",
-        imagen: "./img/notebooks/02.jpg",
-        categoria: {
-            nombre: "Notebooks",
-            id: "notebooks"
-        },
-        precio: 840
-    },
-    {
-        id: "notebook-03",
-        titulo: "Notebook Lenovo Core i7 12GB 256GB SSD 14 FHD Win10 Pro",
-        imagen: "./img/notebooks/03.jpg",
-        categoria: {
-            nombre: "Notebooks",
-            id: "notebooks"
-        },
-        precio: 462
-    },
-    {
-        id: "notebook-04",
-        titulo: "Notebook Gamer Asus Core i5 4.5Ghz 8GB 512GB SSD 15.6",
-        imagen: "./img/notebooks/04.jpg",
-        categoria: {
-            nombre: "Notebooks",
-            id: "notebooks"
-        },
-        precio: 1044
-    },
-    {
-        id: "notebook-05",
-        titulo: "Notebook Gateway Ryzen 7 8GB 512GB SSD 15.6 IPS Win 11",
-        imagen: "./img/notebooks/05.jpg",
-        categoria: {
-            nombre: "Notebooks",
-            id: "notebooks"
-        },
-        precio: 608
-    },
-    // Celulares
-    {
-        id: "celulares-01",
-        titulo: "Xiaomi Redmi 9A 6.53 32GB 2GB 13MP 5000mAh Gris",
-        imagen: "./img/celulares/01.jpg",
-        categoria: {
-            nombre: "Celulares",
-            id: "celulares"
-        },
-        precio: 127
-    },
-    {
-        id: "celular-02",
-        titulo: "Xiaomi Redmi 9C 6.53 64GB 3GB 13MP Cámara Triple",
-        imagen: "./img/celulares/02.jpg",
-        categoria: {
-            nombre: "Celulares",
-            id: "celulares"
-        },
-        precio: 272
-    },
-    {
-        id: "celular-03",
-        titulo: "Motorola Moto e7 6.5 HD+ 32GB 2GB Cámara Dual Gris",
-        imagen: "./img/celulares/03.jpg",
-        categoria: {
-            nombre: "Celulares",
-            id: "celulares"
-        },
-        precio: 197
-    },
-    {
-        id: "celular-04",
-        titulo: "Xiaomi Redmi Note 9 Pro 6.67 128GB 6GB Cámara",
-        imagen: "./img/celulares/04.jpg",
-        categoria: {
-            nombre: "Celulares",
-            id: "celulares"
-        },
-        precio: 449
-    },
-    {
-        id: "celular-05",
-        titulo: "Samsung Galaxy A03 6.5 32GB 3GB 4G Cámara Dual",
-        imagen: "./img/celulares/05.jpg",
-        categoria: {
-            nombre: "Celulares",
-            id: "celulares"
-        },
-        precio: 163
-    },
-    {
-        id: "celular-06",
-        titulo: "Samsung Galaxy A13 6.6 32GB 3GB 4G Cámara Cuádruple",
-        imagen: "./img/celulares/06.jpg",
-        categoria: {
-            nombre: "Celulares",
-            id: "celulares"
-        },
-        precio: 219
-    },
-    {
-        id: "celular-07",
-        titulo: "Motorola E20 6.5 32GB 2GB Cámara Dual Gris",
-        imagen: "./img/celulares/07.jpg",
-        categoria: {
-            nombre: "Celulares",
-            id: "celulares"
-        },
-        precio: 185
-    },
-    {
-        id: "celular-08",
-        titulo: "Umidigi Power 5S 6.53 32GB 4GB Cámara Triple",
-        imagen: "./img/celulares/08.jpg",
-        categoria: {
-            nombre: "Celulares",
-            id: "celulares"
-        },
-        precio: 153
-    },
-    // PC
-    {
-        id: "pc-01",
-        titulo: "PC Gamer Core i7 11700F 11va 1TB SSD",
-        imagen: "./img/pc/01.jpg",
-        categoria: {
-            nombre: "PC",
-            id: "pc"
-        },
-        precio: 1869
-    },
-    {
-        id: "pc-02",
-        titulo: "Pc Ryzen 7 5800X 1TB SSD 16GB RTX3070 Ti 8GB",
-        imagen: "./img/pc/02.jpg",
-        categoria: {
-            nombre: "PC",
-            id: "pc"
-        },
-        precio: 3051
-    },
-    {
-        id: "pc-03",
-        titulo: "Pc Gamer i7 12700F 1TB SSD 16GB",
-        imagen: "./img/pc/03.jpg",
-        categoria: {
-            nombre: "PC",
-            id: "pc"
-        },
-        precio: 3084
-    },
-    {
-        id: "pc-04",
-        titulo: "Pc Gamer Core i5 10400F 16GB 512GB SSD RX6400 4GB",
-        imagen: "./img/pc/04.jpg",
-        categoria: {
-            nombre: "PC",
-            id: "pc"
-        },
-        precio: 1012
-    },
-    {
-        id: "pc-05",
-        titulo: "Pc Gamer Core i9 12900K 2TB SSD 32GB RTX3090 24GB",
-        imagen: "./img/pc/05.jpg",
-        categoria: {
-            nombre: "PC",
-            id: "pc"
-        },
-        precio: 4519
-    }
-];
 
+let productos = [];
+
+fetch("./js/productos.json")
+.then(response => response.json())
+.then(data => {
+    productos = data;
+    cargarProductos(productos);
+})
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
@@ -216,7 +38,6 @@ function cargarProductos(productosElegidos) {
     actualizarBotonesAgregar();
 }
 
-cargarProductos(productos);
 
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
@@ -257,6 +78,24 @@ if (productosEnCarritoLS) {
 }
 
 function agregarAlCarrito(e) {
+
+    Toastify({
+        text: "Producto agregado",
+        duration: 3000,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #3396FF, #5da6f5)",
+        },
+        offset: {
+            x: "1.5rem", // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: "1.5rem" // vertical axis - can be a number or a string indicating unity. eg: '2em'
+          },
+        onClick: function(){} // Callback after click
+      }).showToast();
+
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
 
